@@ -1,0 +1,40 @@
+---
+layout: default
+---
+
+{% assign customInfo = site.pages | where: "output", "false" | where: "componentName", page.componentName %}
+
+<p>
+	{%- if customInfo.description.en -%}
+		{{ customInfo.description.en }}
+	{%- elsif customInfo.description.fr -%}
+		<span lang="fr">{{ customInfo.description.fr }}</span>
+	{%- elsif customInfo.description -%}
+		{{ customInfo.description }}
+	{%- else -%}
+		(No description provided)
+	{%- endif -%}
+</p>
+
+<p>Sponsored by: {{ customInfo.sponsor }}</p>
+
+<h2>Examples</h2>
+<ul>
+{% for example in customInfo.pages.examples %}
+	<li><a href="{{ example.path }}" lang="{{ example.language }}">{{ example.title }}</a></li>
+{% endfor %}
+</ul>
+
+<h2>Maintenance plan</h2>
+<ul>
+{% for deliverable in customInfo.maintenancePlan %}
+	<li>{{ deliverable.due }} - {{ deliverable.what }}</li>
+{% endfor %}
+</ul>
+
+<h2>Todo and for future consideration</h2>
+<ul>
+{% for todo in customInfo.todos %}
+	<li>{{ todo }}</li>
+{% endfor %}
+</ul>
