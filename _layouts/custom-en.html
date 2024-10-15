@@ -3,6 +3,10 @@ layout: default
 ---
 
 {% assign customInfo = site.pages | where: "output", "false" | where: "componentName", page.componentName %}
+{% for customPage in customInfo %}
+	{% assign customInfo = customPage %}
+	{{ break }}
+{% endfor %}
 
 <p>
 	{%- if customInfo.description.en -%}
