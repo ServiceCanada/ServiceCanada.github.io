@@ -1,4 +1,5 @@
 # Site configuration
+remote_theme: wet-boew/gcweb-jekyll
 title: "Serice Canada - Principal Publisher | Éditeur principal" # Site name or title
 
 # Collections
