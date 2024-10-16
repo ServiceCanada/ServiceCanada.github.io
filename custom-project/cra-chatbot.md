@@ -40,7 +40,7 @@ observationNotes:
     observation: Return a JSON file containing what its look like to be a JWT and a JWS
 
 todos:
-  - Minimizing the need of adding custom HTML code in every individual page using the chat bot. Suggestoin: Manage that HTML pattern centrally in teh JS or via an HTML assets. Ref.
+  - Minimizing the need of adding custom HTML code in every individual page using the chat bot. Suggestoin: Manage that HTML pattern centrally in teh JS or via an HTML assets. Ref. https://github.com/ServiceCanada/cra-chatbot/blob/21c282915f0e994bd49d1d00f867f316aaab163c/demos/index.html#L16-L30
   - Optimizing the JS by leveraging object caching. Ref.: https://github.com/ServiceCanada/cra-chatbot/blob/21c282915f0e994bd49d1d00f867f316aaab163c/src/js/cra-chatbot.js#L102-L103
   - Move inline style added in JS over the CSS style sheet. Ref. : https://github.com/ServiceCanada/cra-chatbot/blob/21c282915f0e994bd49d1d00f867f316aaab163c/src/js/cra-chatbot.js#L19
   - Encapsulate the JS in a function + global variable mapping. Ref. https://github.com/ServiceCanada/cra-chatbot/blob/21c282915f0e994bd49d1d00f867f316aaab163c/src/js/cra-chatbot.js#L5-L8
