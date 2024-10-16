@@ -33,7 +33,10 @@ pages:
 maintenancePlan:
   - due: Next release (for v1.5)
     what: Create demos/test that are illustrating all functionality. Like a demos that show all the possible configurable option.
-    rational: During the review of v1.4, we found that change/addition was made to un-demoed feature. We 
+    rational: During the review of v1.4, we found that change/addition was made to un-demoed feature.
+  - due: Next release (for v1.5.0 or v1.4.1)
+    what: Enforce the line ending to be linux line ending, especially when generating the distribution files
+    rational: Ensure that the windows build, linux build or mac build do produce the same binary file.
   - due: Next release or two (v1.5 +)
     what: Start to add automated testing for the search-ui code functional aspect. This could be unit testing or functiona testing with pupetteer.
     rational: There is no functional testing, only a code linter.
