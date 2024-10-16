@@ -41,7 +41,16 @@ observationNotes:
 
 todos:
   - Minimizing the need of adding custom HTML code in every individual page using the chat bot. Suggestoin: Manage that HTML pattern centrally in teh JS or via an HTML assets. Ref.
-  - Optimizing
+  - Optimizing the JS by leveraging object caching. Ref.: https://github.com/ServiceCanada/cra-chatbot/blob/21c282915f0e994bd49d1d00f867f316aaab163c/src/js/cra-chatbot.js#L102-L103
+  - Move inline style added in JS over the CSS style sheet. Ref. : https://github.com/ServiceCanada/cra-chatbot/blob/21c282915f0e994bd49d1d00f867f316aaab163c/src/js/cra-chatbot.js#L19
+  - Encapsulate the JS in a function + global variable mapping. Ref. https://github.com/ServiceCanada/cra-chatbot/blob/21c282915f0e994bd49d1d00f867f316aaab163c/src/js/cra-chatbot.js#L5-L8
+  - Improve CSS selector (improve the CSS class name) to ensure it only target the chat bot element. Ref. https://github.com/ServiceCanada/cra-chatbot/blob/21c282915f0e994bd49d1d00f867f316aaab163c/src/css/cra-chatbot.css#L10
+  - Optimize the CSS selector by making them clear and concise for the chatbot. Ref. https://github.com/ServiceCanada/cra-chatbot/blob/21c282915f0e994bd49d1d00f867f316aaab163c/src/css/cra-chatbot.css#L170
+  - Remove browser specific CSS, and leverage the PostCSS transformation task instead. Ref. https://github.com/ServiceCanada/cra-chatbot/blob/21c282915f0e994bd49d1d00f867f316aaab163c/src/css/cra-chatbot.css#L92
+  - Reorganize the location of where the chatbot icon is added in the page: Add a link to skip to the chatbot
+  - Reorganize the location of where the chatbot icon is added in the page: Stick the chatbot in the page details section instead of the site footer bottom
+  - Reorganize the location of where the chatbot icon is added in the page: Consult with DTO and update the style to match closer the Canada.ca color scheme.
+
 
 output: false
 ---
