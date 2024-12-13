@@ -4,10 +4,13 @@ title:
   fr: Interface de recherche
 description: Provide MWS pages with the proper JS and CSS assets to achieve a working search page with the vendor's (Coveo) technology called Headless.
   
-modified: 2024-01-15
+modified: 2024-10-15
 lastReviewAbout: Prior the release of v1.4.0
 componentName: search-ui
 sponsor: Francis Gorman, Principal Publisher, ESDC 
+
+statusUpdate: Intial creation of this documents
+
 
 pages:
   examples:
