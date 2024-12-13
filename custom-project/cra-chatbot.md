@@ -4,10 +4,12 @@ title:
   fr: Robot de clavardage de l'ARC
 description: Integration 
   
-modified: 2024-01-15
+modified: 2024-12-13
 lastReviewAbout: When moving code from freestyle to github repository
 componentName: cra-chatbot
 sponsor: Mathieu Bergeron, CRA 
+
+statusUpdate: 2024-12-13 - Working on cra-chatbot v2, the new github repository was created on 2024-12-13 in the Service Canada Github organisation.
 
 pages:
   examples:
