@@ -36,8 +36,8 @@ pages:
 maintenancePlan:
   - due: Next release (for v1.5)
     what:
-      - Create demos/test that are illustrating all functionality. Like a demos that show all the possible configurable option.
-      - **Must**: Clean outdated search query from the local storage variable `__coveo.analytics.history`. At minimum an expiry date/time constraint must be applied.
+      - "Create demos/test that are illustrating all functionality. Like a demos that show all the possible configurable option."
+      - "**Must**: Clean outdated search query from the local storage variable `__coveo.analytics.history`. At minimum an expiry date/time constraint must be applied."
     rational: During the review of v1.4, we found that change/addition was made to un-demoed feature.
   - due: Next release (for v1.5.0 or v1.4.1)
     what: Enforce the line ending for CSS build to be linux line ending, especially when generating the distribution files
