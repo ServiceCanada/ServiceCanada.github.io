@@ -36,10 +36,10 @@ pages:
       path: https://servicecanada.github.io/search-ui/test/src-fr.html
 
 maintenancePlan:
-  - due: Next release (was for: v1.6.0, but postponed to 1.6.1 or 1.7.0)
+  - due: "Next release (was for: v1.6.0, but postponed to 1.6.1 or 1.7.0)"
     what:
       - "Must: Clean outdated search query from the local storage variable `__coveo.analytics.history`. At minimum an expiry date/time constraint must be applied."
-    rational: Postponing to next release MAX, since the search vendor is still working on a viable solution which requires management approval on our side (through their Azure item: https://dev.azure.com/CoveoPS/ESD%20Canada%20TA%20work/_workitems/edit/407387)
+    rational: "Postponing to next release MAX, since the search vendor is still working on a viable solution which requires management approval on our side (through their Azure item: https://dev.azure.com/CoveoPS/ESD%20Canada%20TA%20work/_workitems/edit/407387)"
   - due: Next release or two (v1.6 +)
     what: Start to add automated testing for the search-ui code functional aspect. This could be unit testing or functiona testing with pupetteer.
     rational: There is no functional testing, only a code linter and basic syntax checker.
@@ -62,8 +62,8 @@ todos:
   - Align search pages with new GCWeb template and/or define new GCWeb templates
   - Ensure no section or heading or any element with semantic is added alone/empty on the page 
   - Create search template specific styles (.page-type-search), to get rid of overusage of .h3 class for example
-  - Leverage wb core features instead of reinving the wheel, such as for language of page and dates. For dates, native JS functions could be leveraged such as: toLocaleDateString
-  - Improve caching of variable that are used multiple times in the script, such as: window.location, then window.location.pathname
+  - "Leverage wb core features instead of reinving the wheel, such as for language of page and dates. For dates, native JS functions could be leveraged such as: toLocaleDateString"
+  - "Improve caching of variable that are used multiple times in the script, such as: window.location, then window.location.pathname"
   - Revisit how dates are handled for output formats (need an array of months?)
   - Make IDs configurable for "suggestion", "result-list", "result-link", "query-summary", "pager"
   - Revisit customEvent to potentially be scoped to the search-ui element instead of document

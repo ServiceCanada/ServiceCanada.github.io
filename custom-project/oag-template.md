@@ -28,7 +28,7 @@ maintenancePlan:
     what: Reduce number of includes necessary by adapting GCWeb's own includes
     rational: Having many include overrides could increase the technical debt of this project. By adapting GCWeb Jekyll to leverage different parameters, we'll be able to minimize the need for include overrides.
   - due: Next release (for v1.1 or v1.0.1)
-    what: Add <title> and <xml> elements in SVG markup (ref: https://github.com/wet-boew/GCWeb/blob/master/sites/assets/sig-blk-en.svg?short_path=5922cb9)
+    what: "Add <title> and <xml> elements in SVG markup (ref: https://github.com/wet-boew/GCWeb/blob/master/sites/assets/sig-blk-en.svg?short_path=5922cb9)"
     rational: SVG's should be of high quality
 
 observationNotes:
