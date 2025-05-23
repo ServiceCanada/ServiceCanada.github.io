@@ -72,11 +72,11 @@ todos:
   - "`numberOfPages: 9` and `automaticallyCorrectQuery: false` should be configurable through parameters"
   - "**to validate, reported as completed** Investigate Pagination styles when testing from GitHub"
   - "**to validate, reported as completed** Investigate #wb-land focus on Advanced search"
-  - COMPLETED: Potentially come up with an easier way to test locally
-  - COMPLETED: Finish proper development of Suggestion box (type-ahead)
-  - COMPLETED: Improve the form code to not rely on an action that points to an anchor for a dynamically added element, which doesn't exist on the page prior to JS
-  - COMPLETED: Revisit the need to search for postscript and rich text documents (ps and rtf. Are they needed? What's the usecase?
-  - COMPLETED: Revisit the "window.location.origin.startsWith( 'file://' )" condition
+  - "COMPLETED: Potentially come up with an easier way to test locally"
+  - "COMPLETED: Finish proper development of Suggestion box (type-ahead)"
+  - "COMPLETED: Improve the form code to not rely on an action that points to an anchor for a dynamically added element, which doesn't exist on the page prior to JS"
+  - "COMPLETED: Revisit the need to search for postscript and rich text documents (ps and rtf. Are they needed? What's the usecase?"
+  - "COMPLETED: Revisit the window.location.origin.startsWith( 'file://' ) condition"
 
 output: false
 ---
