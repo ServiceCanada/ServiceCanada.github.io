@@ -39,7 +39,7 @@ maintenancePlan:
   - due: "Next release (was for: v1.6.0, but postponed to 1.6.1 or 1.7.0)"
     what:
       - "Must: Clean outdated search query from the local storage variable `__coveo.analytics.history`. At minimum an expiry date/time constraint must be applied."
-    rational: "Postponing to next release MAX, since the search vendor is still working on a viable solution which requires management approval on our side (through their Azure item: https://dev.azure.com/CoveoPS/ESD%20Canada%20TA%20work/_workitems/edit/407387)"
+    rational: "Postponing to next release MAX, since the search vendor is still working on a viable solution which requires management approval on our side (through: https://jtickets.atlassian.net/browse/SR-543)"
   - due: Next release or two (v1.6 +)
     what: Start to add automated testing for the search-ui code functional aspect. This could be unit testing or functiona testing with pupetteer.
     rational: There is no functional testing, only a code linter and basic syntax checker.
