@@ -29,7 +29,7 @@ layout: default
 <h2>Exemples</h2>
 <ul>
 {% for example in customInfo.pages.examples %}
-	{%- if example.language === "fr" -%}
+	{%- if example.language == "fr" -%}
 	<li><a href="{{ example.path }}">{{ example.title }}</a></li>
 	{%- else -%}
 	<li><a href="{{ example.path }}" lang="{{ example.language }}" hreflang="{{ example.language }}">{{ example.title }}</a></li>
