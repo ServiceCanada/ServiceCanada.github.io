@@ -14,6 +14,15 @@ defaults:
     values:
       layout: default
 
+global:
+  breadcrumbs:
+  en:
+    - link: "/index-en.html"
+      title: "Home"
+  fr:
+    - link: "/index-fr.html"
+      title: "Accueil"
+
 # Files excluded from Jekyll builds
 exclude:
 - README.md
