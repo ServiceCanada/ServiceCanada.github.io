@@ -53,6 +53,7 @@ maintenancePlan:
     rational: Ensure that the windows build, linux build or mac build do produce the same binary file.
 
 todos:
+  - Add breadcrumbs to Search UI home page in all working examples
   - Refactor the code to make it easier to understand it functional aspect
   - Manage template centrally in a way that is applying change are intituitive and easierand make if easier to configure/update
   - Remove the need for having a CSS file to be handled by GCWeb instead!
