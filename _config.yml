@@ -13,7 +13,7 @@ defaults:
     values:
       layout: default
   - scope:
-      path: "*/custom-project/*-en.html"
+      path: "custom-project/*-en.html"
     values:
       breadcrumbs:
         en:
