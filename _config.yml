@@ -8,20 +8,20 @@ title: "Serice Canada - Principal Publisher | Éditeur principal" # Site name or
 
 # Site settings
 defaults:
-  -
-    scope:
+  - scope:
       path: ""
     values:
       layout: default
-
-global:
-  breadcrumbs:
-    en:
-      - link: "/index-en.html"
-        title: "Home"
-    fr:
-      - link: "/index-fr.html"
-        title: "Accueil"
+  - scope:
+      path: "*/custom-project/*-en.html"
+    values:
+      breadcrumbs:
+        en:
+          - link: "https://servicecanada.github.io/custom-project/index-en.html"
+            title: "Home"
+        fr:
+          - link: "https://servicecanada.github.io/custom-project/index-fr.html"
+            title: "Accueil"
 
 # Files excluded from Jekyll builds
 exclude:
