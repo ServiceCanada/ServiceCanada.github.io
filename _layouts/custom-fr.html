@@ -29,14 +29,18 @@ layout: default
 <h2>Exemples</h2>
 <ul>
 {% for example in customInfo.pages.examples %}
-	<li><a href="{{ example.path }}" lang="{{ example.language }}">{{ example.title }}</a></li>
+	{%- if example.language === "fr" -%}
+	<li><a href="{{ example.path }}">{{ example.title }}</a></li>
+	{%- else -%}
+	<li><a href="{{ example.path }}" lang="{{ example.language }}" hreflang="{{ example.language }}">{{ example.title }}</a></li>
+	{%- endif -%}
 {% endfor %}
 </ul>
 
 <h2>Plan de maintenance</h2>
 <ul>
 {% for deliverable in customInfo.maintenancePlan %}
-	<li lang="en">{{ deliverable.due }} - {{ deliverable.what }}</li>
+	<li lang="en"><span class="label label-default">{{ deliverable.due }}</span> <br>{{ deliverable.what }}</li>
 {% endfor %}
 </ul>
 
