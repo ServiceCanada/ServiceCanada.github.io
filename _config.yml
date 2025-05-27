@@ -12,16 +12,6 @@ defaults:
       path: ""
     values:
       layout: default
-  - scope:
-      path: "custom-project"
-    values:
-      breadcrumbs:
-        en:
-          - link: "https://servicecanada.github.io/custom-project/index-en.html"
-            title: "Home"
-        fr:
-          - link: "https://servicecanada.github.io/custom-project/index-fr.html"
-            title: "Accueil"
 
 # Files excluded from Jekyll builds
 exclude:
