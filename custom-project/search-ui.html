@@ -19,7 +19,7 @@ pages:
 
 maintenancePlan:
   - due: Next release (v1.7 +)
-    what: Remove the need for having a CSS file. Should be handled by GCWeb instead. Also, align search pages with new GCWeb template and/or define new GCWeb templates
+    what: Remove the need for having a CSS file for common utilities, classes, etc. to be handled by GCWeb instead.
     rationale: CSS and templates should be handled by GCWeb instead of having new ones in this project.
   - due: Next release or two (v1.7 +)
     what: Revisit customEvent to potentially be scoped to the search-ui element instead of document
@@ -27,18 +27,12 @@ maintenancePlan:
   - due: Next release or two (v1.8 +)
     what: Start to add automated testing for the search-ui code functional aspect. This could be unit testing or functional testing with pupetteer.
     rationale: There is no functional testing, only a code linter and basic syntax checker.
-  - due: "Next release (1.7.0) - COMPLETED"
-    what:
-      - "Must: Clean outdated search query from the local storage variable <code>__coveo.analytics.history</code>. At minimum an expiry date/time constraint must be applied."
-    rationale: "Postponing to next release MAX, since the search vendor is still working on a viable solution which requires management approval on our side (through: https://jtickets.atlassian.net/browse/SR-543)"
-  - due: Release v1.6.0 - COMPLETED
-    what:
-      - "Create demos/test that are illustrating all functionality. Like a demos that show all the possible configurable option."
-      - "Manage API key over a session storage where it allow the tester to enter that key manually in a separate page"
-    rationale: During the review of v1.4, we found that change/addition was made to un-demoed feature.
-  - due: Release v1.5.0 or v1.4.1 - COMPLETED
-    what: Enforce the line ending for CSS build to be linux line ending, especially when generating the distribution files
-    rationale: Ensure that the windows build, linux build or mac build do produce the same binary file.
+  - due: TBD
+    what: Use GCWeb combobox for QS once available
+    rationale: Use GCWeb available components as much as possible
+  - due: TBD
+    what: Update facets template in GCWeb once facets are implemented in search results
+    rationale: Facets should match GCWeb reference implementation once available
 
 todos:
   - Refactor the code to make it easier to understand it functional aspect
