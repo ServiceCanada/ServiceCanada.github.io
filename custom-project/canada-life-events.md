@@ -18,10 +18,9 @@ pages:
       path: https://servicecanada.github.io/canada-life-events/index.html
 
 maintenancePlan:
-  - Todo
-
-observationNotes:
-  - Todo
+  - due: First release (for v1.0)
+    what: Publish distribution files
+    rationale: No distribution file has been generated for this project yet
 
 todos:
   - Todo
