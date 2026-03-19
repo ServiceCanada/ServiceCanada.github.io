@@ -4,12 +4,12 @@ title:
   fr: Interface de recherche
 description: Provide MWS pages with the proper JS and CSS assets to achieve a working search page with the vendor's (Coveo) technology called Headless.
   
-modified: 2025-05-22
-lastReviewAbout: Prior to release v1.6.0
+modified: 2026-03-19
+lastReviewAbout: Prior to release v1.8.0
 componentName: search-ui
 sponsor: Francis Gorman, Principal Publisher, ESDC 
 
-statusUpdate: 2025-05-22 - Working on release v1.6.0, which doesn't include 1 item from the maintenance plan (postponed to next release)
+statusUpdate: 2026-03-19 - Working on release v1.8.0
 
 pages:
   examples:
@@ -18,10 +18,10 @@ pages:
       path: https://servicecanada.github.io/search-ui/index.html
 
 maintenancePlan:
-  - due: Next release (v1.7 +)
-    what: Remove the need for having a CSS file for common utilities, classes, etc. to be handled by GCWeb instead.
-    rationale: CSS and templates should be handled by GCWeb instead of having new ones in this project.
-  - due: Next release or two (v1.7 +)
+  - due: Next release (v1.8 +)
+    what: Move QS styles to GCWeb
+    rationale: CSS should be handled by GCWeb instead of having new ones in this project.
+  - due: Next release or two (v1.8 +)
     what: Revisit customEvent to potentially be scoped to the search-ui element instead of document
     rationale: This will optimize event listeners to be more specific
   - due: Next release or two (v1.8 +)
