@@ -4,12 +4,12 @@ title:
   fr: Interface de recherche
 description: Provide MWS pages with the proper JS and CSS assets to achieve a working search page with the vendor's (Coveo) technology called Headless.
   
-modified: 2026-03-19
-lastReviewAbout: Prior to release v1.8.0
+modified: 2026-04-30
+lastReviewAbout: Prior to release v1.9.0
 componentName: search-ui
 sponsor: Francis Gorman, Principal Publisher, ESDC 
 
-statusUpdate: 2026-03-19 - Working on release v1.8.0
+statusUpdate: 2026-04-30 - Working on release v1.9.0
 
 pages:
   examples:
@@ -18,18 +18,24 @@ pages:
       path: https://servicecanada.github.io/search-ui/index.html
 
 maintenancePlan:
-  - due: Next release (v1.8 +)
+  - due: Next patch release (v1.9.x)
+    what: Normalize query selectors
+    rationale: within the project 
+  - due: Next minor release (On hold due to combobox)
     what: Move QS styles to GCWeb
     rationale: CSS should be handled by GCWeb instead of having new ones in this project.
-  - due: Next release or two (v1.8 +)
+  - due: Next minor release (v1.10.0)
     what: Revisit customEvent to potentially be scoped to the search-ui element instead of document
     rationale: This will optimize event listeners to be more specific
-  - due: Next release or two (v1.8 +)
+  - due: Next minor release (v1.10.0)
     what: Start to add automated testing for the search-ui code functional aspect. This could be unit testing or functional testing with pupetteer.
     rationale: There is no functional testing, only a code linter and basic syntax checker.
-  - due: Next release or two (v1.8 +)
+  - due: Next minor release (v1.10.0)
     what: Come up with a plan to update headless.js every 6 months
     rationale: It's important keep the third-party code up to date to have access to the latest features and fixes.
+  - due: Next major release (v2.0.0)
+    what: Refactor the code to make it easier to understand it functional aspect
+    rationale: Currently, the code is all over the place and unorganized. It needs to be properly structured to make it easier to understand.
   - due: TBD
     what: Use GCWeb combobox for QS once available
     rationale: Use GCWeb available components as much as possible
@@ -38,7 +44,6 @@ maintenancePlan:
     rationale: Facets should match GCWeb reference implementation once available
 
 todos:
-  - Refactor the code to make it easier to understand it functional aspect
   - Add Expected output on test pages (HTML) and use Jekyll highlights
   - "Leverage wb core features instead of reinventing the wheel, such as for language of page and dates. For dates, native JS functions could be leveraged such as: toLocaleDateString"
   - Make IDs configurable for "suggestion", "result-list", "result-link", "query-summary", "pager"
