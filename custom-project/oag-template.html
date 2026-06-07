@@ -4,12 +4,12 @@ title:
   fr: Gabarit BVG
 description: Integration 
   
-modified: 2025-04-11
+modified: 2026-03-31
 lastReviewAbout: Initial implementation of the custom template
 componentName: oag-template
 sponsor: OAG onboarding team
 
-statusUpdate: 2025-04-11 - Intial creation of this documents
+statusUpdate: 2026-03-31 - Working on release v1.4.1 or v1.5.0
 
 pages:
   examples:
@@ -18,19 +18,26 @@ pages:
       path: https://servicecanada.github.io/oag-template/index.html
 
 maintenancePlan:
-  - due: Next release (for v1.1 or v1.0.1)
+  - due: Next release (for v1.4 +)
+    what: Migrate in a long term solution and remove the temporary CSS that was added to mitigate the XSS clean up by the removal of the font element. There is a total of 4 CSS class which are: 'tmp-fx-charcoal', 'tmp-fx-fs-08em', 'tmp-fx-black' and 'tmp-fx-purple-trillium'. This file must be addressed/eliminated: /assets/oag-font-css-fix.css
+    rationale: Inline styles could generate unexpected and make hard to trace rendering concern while the authoring tool are maintained and increase the technical debt. Use CSS class with accompanying working example help to define the expected behaviour and to ensure they continue to work as expected once made available through  the authoring tool.
+  - due: Next release (for v1.4 +)
     what: Reduce number of includes necessary by adapting GCWeb's own includes
     rationale: Having many include overrides could increase the technical debt of this project. By adapting GCWeb Jekyll to leverage different parameters, we'll be able to minimize the need for include overrides.
-  - due: Next release (for v1.1 or v1.0.1)
-    what: "Add <code>&lt;title></code> and <code>&lt;xml></code> elements in SVG markup (ref: https://github.com/wet-boew/GCWeb/blob/master/sites/assets/sig-blk-en.svg?short_path=5922cb9)"
-    rationale: SVG's should be of high quality
+    status: Need to be assessed
+    updated: 2025-04-11
 
 observationNotes:
   - about: Main menu
     observation: Some main menu items do not have sub-menu items, which is not standard for the main menu.
 
 todos:
+  - On about 300+ published pages there is trace of inline style, those need to be replaced by long term solution that leverage CSS class and be demoed by the reference implementation. Future update/configuration to the authoring tool could add emphasis on this task.
   - Implement dynamic approach for home page tiles.
+
+requirement:
+  - Any addition to this file are prohibited: /assets/oag-font-css-fix.css
+  - Those temporary CSS can not be used anywhere else except to the single working example page: /assets/oag-font-css-fix.css
 
 output: false
 ---
